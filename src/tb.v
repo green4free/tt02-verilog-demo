@@ -8,10 +8,10 @@ that can be driven / tested by the cocotb test.py
 
 module tb (
     // testbench is controlled by test.py
-    input clk,
-    input rst,
-    input en,
-    output [7:0] outputs
+    input  wire clk,
+    input  wire rst,
+    input  wire en,
+    output wire  [7:0] outputs
    );
 
     // this part dumps the trace to a vcd file that can be viewed with GTKWave
